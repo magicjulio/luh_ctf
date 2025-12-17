@@ -34,11 +34,13 @@ First Rev Flag: vault-door training: https://play.picoctf.org/practice/challenge
 
 
 # Forensics
-First Forensics: Flag in Flame: https://play.picoctf.org/practice/challenge/523 (cat b64 -d -> png -> crop -> hex)
+First Forensics: Hidden in plainsight: https://play.picoctf.org/practice/challenge/524
+
 
 ## Try
 - Corrupted file: https://play.picoctf.org/practice/challenge/519
-- Hidden in plainsight: https://play.picoctf.org/practice/challenge/524 (exiftool)
+- Flag in Flame: https://play.picoctf.org/practice/challenge/523
+
 
 
 # Binary Exploitation
