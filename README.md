@@ -4,7 +4,7 @@
 
 ## Try:
 
-- Insp3ct0r: https://play.picoctf.org/practice/challenge/275
+- Insp3ct0r: https://play.picoctf.org/practice/challenge/18
 - Web decode: https://play.picoctf.org/practice/challenge/427 (Inspect + base64)
 - dont-use-client-side https://play.picoctf.org/practice/challenge/66 (Javascript)
 
