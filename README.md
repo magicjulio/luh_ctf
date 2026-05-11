@@ -49,16 +49,4 @@ First PWN Flag: heap 0: https://play.picoctf.org/practice/challenge/438
 ### More
 Intro to PWN 1-3 (Github)
 
-# Finally a real ctf
 
-## Nahamcon winter CTF noch bis 21 Uhr
-
-### Sign up:
-https://ctf.nahamcon.com/ctf/nahamcon-winter-2025
-### Join team with code:
-d014baf4670cb2d11f6422ae1f2078e0
-
-### Unser Ziel: erster Platz
-- 1st Place $1000
-- 2nd Place $500
-- 3rd Place $250
