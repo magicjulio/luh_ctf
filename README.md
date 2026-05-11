@@ -1,5 +1,8 @@
 # Web
 
+### die links sind leider alle ungültig weil picoctf anscheined aufgekauft wurde. (bruh)
+
+
 1: **First Flag**: Inspect HTML https://play.picoctf.org/practice/challenge/275
 
 ## Try:
