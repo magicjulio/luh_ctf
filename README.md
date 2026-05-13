@@ -1,55 +1,37 @@
-# Web
+# 2tes treffen plan
 
-### die links sind leider alle ungültig weil picoctf anscheined aufgekauft wurde. (bruh)
+Ich hab von vielen von euch gehört das es letzes mal etwas zu schnell ging. Deswegen möchte ich dieses mal etwas langsamer dran gehen
 
 
-1: **First Flag**: Inspect HTML https://play.picoctf.org/practice/challenge/275
+# First: a real 0 Day. You can try it.
 
-## Try:
+you need: ssh
+** ssh luhi@ip **
 
-- Insp3ct0r: https://play.picoctf.org/practice/challenge/18
-- Web decode: https://play.picoctf.org/practice/challenge/427 (Inspect + base64)
-- dont-use-client-side https://play.picoctf.org/practice/challenge/66 (Javascript)
-
-### Even more web
-- (Bit harder) Crack the Gate 1: https://play.picoctf.org/practice/challenge/520 (HTML & intercepting requests)
-- (Requires Python) SSTI1: https://play.picoctf.org/practice/challenge/492 (Server side template injection)
+flag: (sudo only) root/flag.txt
 
 
 
-# Crypto
-**First Crypto Flag**: 13: https://play.picoctf.org/practice/challenge/62
+## Heutiger CTF
 
-## Try:
-Interencdec: https://play.picoctf.org/practice/challenge/418
-
-
-### Advanced:
-- hashcrack: https://play.picoctf.org/practice/challenge/475 
-- EVEN RSA CAN BE BROKEN???: https://play.picoctf.org/practice/challenge/470
-
-# Reversing
-First Rev Flag: vault-door training: https://play.picoctf.org/practice/challenge/7
-
-## Try:
-- Intro to Reversing 1 (Im Github)
-- Flag Hunters: https://play.picoctf.org/practice/challenge/472 (Command injection)
+#### Hack the Box
+- https://ctf.hackthebox.com/event/1434
+- Wir fokussieren uns auf web. Aber ihr könnt gerne auch andere Kategorien probieren.
 
 
-# Forensics
-First Forensics: Hidden in plainsight: https://play.picoctf.org/practice/challenge/524
+# 1 Web > Jailbreak
+- Tipp 1: lies dir die beschreibung gut durch. Auf welchen teil der website solltest du dich fokussieren?
+- Tipp 2: Google: XML External Entity (XXE)
+- Tipp 3: Frag dich: welchen teil vom xml wird mir angezeigt nachdem ich es abgeschickt habe?
 
+# 2 Web > TimeKORP
+- Tipp 1: Downloade den Source code und öffne ihn in Code. Entferne teile die offensichtlich nicht relevant sind wie assets.
+- Tipp 2: Lass dich nicht davon abschreken das du php möglicherweise nicht kennst. Viel ist ähnlich wie zb in java. (e.g consturctor & this)
+- Tipp 3: Dein ziel ist es auf dem Zielcomputer linux befehle ausführen zu können. Die flag ist in einer datei "flag". Um sie zu lesen müsstest du cat flag ausführen
+- Tipp 4: In TimeModel.php in Z. 11 wird mit exec der linux befehl **date** ausgeführt. Dabei wird ein format angegeben was **du** in Z.6 beeinflussen!
+- Tipp 5: Dein input ist $format in: **$this->command = "date '+" . $format . "' 2>&1";** beachte das dein input inerhalb einer string ' ... ' gesetzt wird. Du mustt dieser string _escapen_.
+- Tipp 6: Dein command sollte mit ; enden und damit du keine syntax fehler verursachtst kannst du ein kommentar symbol verwenden (#) um den rest der zeile nach deinem input nicht auszuführen.
+- Tipp 7: Das dein command immernoch nicht ausgeführt wird kann an der art und weise wie web request verarbeitet werden liegen. Suche online nach einem **url encoder**.
 
-## Try
-- Corrupted file: https://play.picoctf.org/practice/challenge/519
-- Flag in Flame: https://play.picoctf.org/practice/challenge/523
-
-
-
-# Binary Exploitation
-First PWN Flag: heap 0: https://play.picoctf.org/practice/challenge/438
-
-### More
-Intro to PWN 1-3 (Github)
-
-
+## Auch Interessant: OSINT
+- https://ctf.osint.industries/challenges
